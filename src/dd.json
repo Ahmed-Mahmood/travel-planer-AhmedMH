@@ -1,0 +1,172 @@
+{
+  destination: 'Newyork, United Kingdom',
+
+///////////////////////////////////////
+
+
+  weather: [
+    {
+      moonrise_ts: 1627859721,
+      wind_cdir: 'W',
+      rh: 62,
+      pres: 994.571,
+      high_temp: 15.8,
+      sunset_ts: 1627936198,
+      ozone: 333.438,
+      moon_phase: 0.305534,
+      wind_gust_spd: 5.86342,
+      snow_depth: 0,
+      clouds: 37,
+      ts: 1627858860,
+      sunrise_ts: 1627878195,
+      app_min_temp: 10.5,
+      wind_spd: 1.59047,
+      pop: 0,
+      wind_cdir_full: 'west',
+      slp: 1013.21,
+      moon_phase_lunation: 0.78,
+      valid_date: '2021-08-02',
+      app_max_temp: 16.3,
+      vis: 0,
+      dewpt: 7.9,
+      snow: 0,
+      uv: 3.33498,
+      weather: [Object],
+      wind_dir: 260,
+      max_dhi: null,
+      clouds_hi: 0,
+      precip: 0,
+      low_temp: 9.8,
+      max_temp: 16.3,
+      moonset_ts: 1627919937,
+      datetime: '2021-08-02',
+      temp: 14.2,
+      min_temp: 10.5,
+      clouds_mid: 1,
+      clouds_low: 36
+    },
+    {
+      moonrise_ts: 1627947131,
+      wind_cdir: 'SSE',
+      rh: 83,
+      pres: 992.741,
+      high_temp: 15.3,
+      sunset_ts: 1628022472,
+      ozone: 324.833,
+      moon_phase: 0.218067,
+      wind_gust_spd: 6.93391,
+      snow_depth: 0,
+      clouds: 87,
+      ts: 1627945260,
+      sunrise_ts: 1627964711,
+      app_min_temp: 9.8,
+      wind_spd: 1.9097,
+      pop: 70,
+      wind_cdir_full: 'south-southeast',
+      slp: 1011.47,
+      moon_phase_lunation: 0.81,
+      valid_date: '2021-08-03',
+      app_max_temp: 15.3,
+      vis: 0,
+      dewpt: 11.3,
+      snow: 0,
+      uv: 2.49665,
+      weather: [Object],
+      wind_dir: 153,
+      max_dhi: null,
+      clouds_hi: 57,
+      precip: 2.26758,
+      low_temp: 10.6,
+      max_temp: 15.3,
+      moonset_ts: 1628010785,
+      datetime: '2021-08-03',
+      temp: 12.6,
+      min_temp: 9.8,
+      clouds_mid: 59,
+      clouds_low: 60
+    },
+    {
+      moonrise_ts: 1628034971,
+      wind_cdir: 'S',
+      rh: 88,
+      pres: 989.666,
+      high_temp: 14.6,
+      sunset_ts: 1628108743,
+      ozone: 338.396,
+      moon_phase: 0.141207,
+      wind_gust_spd: 8.4358,
+      snow_depth: 0,
+      clouds: 98,
+      ts: 1628031660,
+      sunrise_ts: 1628051227,
+      app_min_temp: 11.8,
+      wind_spd: 2.31136,
+      pop: 90,
+      wind_cdir_full: 'south',
+      slp: 1008.33,
+      moon_phase_lunation: 0.84,
+      valid_date: '2021-08-04',
+      app_max_temp: 14.6,
+      vis: 0,
+      dewpt: 12.5,
+      snow: 0,
+      uv: 2.43095,
+      weather: [Object],
+      wind_dir: 190,
+      max_dhi: null,
+      clouds_hi: 62,
+      precip: 11.7227,
+      low_temp: 11.2,
+      max_temp: 14.6,
+      moonset_ts: 1628101292,
+      datetime: '2021-08-04',
+      temp: 13.3,
+      min_temp: 11.8,
+      clouds_mid: 79,
+      clouds_low: 76
+    }
+  ],
+
+
+  ////////////////////////////////
+
+
+  pic: {
+    id: 748595,
+    pageURL: 'https://pixabay.com/photos/new-york-city-travel-transportation-748595/',
+    type: 'photo',
+    tags: 'new york, city, travel',
+    previewURL: 'https://cdn.pixabay.com/photo/2015/05/01/14/46/new-york-748595_150.jpg',
+    previewWidth: 150,
+    previewHeight: 99,
+    webformatURL: 'https://pixabay.com/get/gb0a358457a622b93a29aa87a212a4b6c2d78b7a0f96af10f9c939e89f5a68246ae1b26ba77bed500e3fc480fd63e48fa_640.jpg',
+    webformatWidth: 640,
+    webformatHeight: 426,
+    largeImageURL: 'https://pixabay.com/get/ga85bbef549df2056c8d8706a29d5f454c5a84f29b3ecd601a27b16c51f2f21fae12049126c4cb4de3be8b93a27ba398f1537558f12aac298b5120386504f3c74_1280.jpg',
+    imageWidth: 5184,
+    imageHeight: 3456,
+    imageSize: 2774534,
+    views: 42803,
+    downloads: 21759,
+    collections: 139,
+    likes: 101,
+    comments: 9,
+    user_id: 987173,
+    user: 'nameng',
+    userImageURL: ''
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"data":[{"moonrise_ts":1627859721,"wind_cdir":"W","rh":62,"pres":994.571,"high_temp":15.8,"sunset_ts":1627936198,"ozone":333.438,"moon_phase":0.305534,"wind_gust_spd":5.86342,"snow_depth":0,"clouds":37,"ts":1627858860,"sunrise_ts":1627878195,"app_min_temp":10.5,"wind_spd":1.59047,"pop":0,"wind_cdir_full":"west","slp":1013.21,"moon_phase_lunation":0.78,"valid_date":"2021-08-02","app_max_temp":16.3,"vis":0,"dewpt":7.9,"snow":0,"uv":3.33498,"weather":{"icon":"c02d","code":802,"description":"Scattered clouds"},"wind_dir":260,"max_dhi":null,"clouds_hi":0,"precip":0,"low_temp":9.8,"max_temp":16.3,"moonset_ts":1627919937,"datetime":"2021-08-02","temp":14.2,"min_temp":10.5,"clouds_mid":1,"clouds_low":36},{"moonrise_ts":1627947131,"wind_cdir":"SSE","rh":83,"pres":992.741,"high_temp":15.3,"sunset_ts":1628022472,"ozone":324.833,"moon_phase":0.218067,"wind_gust_spd":6.93391,"snow_depth":0,"clouds":87,"ts":1627945260,"sunrise_ts":1627964711,"app_min_temp":9.8,"wind_spd":1.9097,"pop":70,"wind_cdir_full":"south-southeast","slp":1011.47,"moon_phase_lunation":0.81,"valid_date":"2021-08-03","app_max_temp":15.3,"vis":0,"dewpt":11.3,"snow":0,"uv":2.49665,"weather":{"icon":"c04d","code":804,"description":"Overcast clouds"},"wind_dir":153,"max_dhi":null,"clouds_hi":57,"precip":2.26758,"low_temp":10.6,"max_temp":15.3,"moonset_ts":1628010785,"datetime":"2021-08-03","temp":12.6,"min_temp":9.8,"clouds_mid":59,"clouds_low":60},{"moonrise_ts":1628034971,"wind_cdir":"S","rh":88,"pres":989.666,"high_temp":14.6,"sunset_ts":1628108743,"ozone":338.396,"moon_phase":0.141207,"wind_gust_spd":8.4358,"snow_depth":0,"clouds":98,"ts":1628031660,"sunrise_ts":1628051227,"app_min_temp":11.8,"wind_spd":2.31136,"pop":90,"wind_cdir_full":"south","slp":1008.33,"moon_phase_lunation":0.84,"valid_date":"2021-08-04","app_max_temp":14.6,"vis":0,"dewpt":12.5,"snow":0,"uv":2.43095,"weather":{"icon":"r02d","code":501,"description":"Moderate rain"},"wind_dir":190,"max_dhi":null,"clouds_hi":62,"precip":11.7227,"low_temp":11.2,"max_temp":14.6,"moonset_ts":1628101292,"datetime":"2021-08-04","temp":13.3,"min_temp":11.8,"clouds_mid":79,"clouds_low":76}],"city_name":"Oban","lon":-5.28,"timezone":"Europe\/London","lat":56.25,"country_code":"GB","state_code":"SCT"}

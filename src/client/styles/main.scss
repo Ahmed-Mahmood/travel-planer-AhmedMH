@@ -1,0 +1,333 @@
+
+// @import "https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@400;800&family=Sacramento&display=swap";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+body {
+	font: 400 0.8rem Lato, sans-serif;
+	overflow-x: hidden;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+ul {
+	list-style: none;
+}
+.link {
+	color: #5b4b88;
+	text-decoration: none;
+	transition: 0.3s;
+	&:hover {
+		color: #b31341;
+	}
+	&:visited {
+		text-decoration: none;
+	}
+}
+button {
+	background: #f923508a;
+	border: transparent;
+	color: #fff;
+	font: 400 0.8rem Lato, sans-serif;
+	line-height: 1.25rem;
+	overflow: hidden;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	transition: 0.3s;
+	width: 100%;
+	&:hover {
+		background: #b31341;
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		background: #b31341;
+		color: #fff;
+	}
+}
+#nav {
+	align-items: center;
+	display: flex;
+	height: 10vh;
+	justify-content: center;
+}
+#nav#nav-header {
+	font: 400 2.5rem Sacramento, cursive;
+}
+#trip-plan {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url('../media/s.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	>#form-container {
+		transform: translateY(-25%);
+		>#plan-header {
+			color: #fff;
+			font: 700 2.5rem Sacramento, cursive;
+			margin-bottom: 2rem;
+			padding: 5rem 1rem 0;
+			text-align: center;
+		}
+		>#trip-form {
+			padding: 0 1rem;
+			width: 90%;
+			max-width: 420px;
+			margin: 0 auto;
+			>#trip-fields {
+				>input {
+					border: 0;
+					font: 400 0.8rem Lato, sans-serif;
+					height: 2.4rem;
+					line-height: 1.25rem;
+					overflow: hidden;
+					padding: 1.5rem 1rem;
+					width: 100%;
+					background: rgba(73, 17, 110, 0.59);
+					color: #fff;
+					&:focus {
+						box-shadow: 0 0 0.15rem #5b4b88;
+						outline: none;
+					}
+					&:active {
+						outline: none;
+					}
+				}
+				>input[type=date] {
+					max-width: 100%;
+					overflow: hidden;
+					&:before {
+						content: attr(placeholder);
+						color: #eee;
+						margin-right: 0.5em;
+					}
+				}
+				>#submit-btn {
+					border-radius: 0.15rem;
+					height: 2.4rem;
+				}
+			}
+		}
+	}
+}
+::placeholder {
+	color: #eee;
+}
+#trips {
+	margin-top: 1rem;
+	>#trips-list {
+		display: grid;
+		grid-auto-rows: minmax(auto);
+		grid-template-columns: 1fr;
+		gap: 4vh 4vh;
+		>.trips-card {
+			border-radius: 5px;
+			box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+			display: grid;
+			grid-template-rows: auto 1fr;
+			min-width: 220px;
+			>.trips-head {
+				// height: 4.5rem;
+				display: grid;
+				grid-template-columns: 1fr auto;
+				align-content:center;
+				>.trips-info {
+					display:flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 4.5rem;
+					color: #fff;
+					padding: 0.5rem 0 0.5rem 1rem;
+					background: #5b4b88;
+					>.trip-header{
+						font-size: 0.9rem;
+					}
+				}
+				>.trip-edit {
+					text-align: center;
+					>.del-btn {
+						background: #5b4b88;
+						color: #fff;
+						height: 100%;
+						font-size: 1.5rem;
+						transition: background 0.7s ease, olor 0.7s ease;
+						padding: 0.8rem;
+						&:hover {
+							background: #fff;
+							color: #5b4b88;
+						}
+					}
+				}
+			}
+			>.trip-content {
+				position: relative;
+				>.trip-image {
+					>img {
+						height: 250px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.weather-container {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateX(90deg);
+	transform-origin: top;
+	width: 100%;
+	height: 100%;
+	background: rgba(91, 75, 136, 0.73);
+	color: #fff;
+	transition: transform 0.5s ease;
+}
+.trip-weather {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-evenly;
+}
+.weather-forecast {
+	display: inline-block;
+	text-align: center;
+}
+.weather-forecast-icon {
+	max-width: 4.75rem;
+}
+.trip-content {
+	&:hover {
+		.weather-container {
+			transform: translate(-50%, -50%) rotateX(0deg);
+			visibility: visible;
+		}
+	}
+}
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background: #fafafa;
+	height: 10vh;
+	>a {
+		>#footer-to-up {
+			>i {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	>#copy {
+		font-size: 1em;
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 480px) {
+	#trips {
+		margin: 1rem;
+		padding: 1rem;
+		>#trips-list {
+			align-items: stretch;
+			column-gap: 2vw;
+			grid-template-columns: repeat(2, 1fr);
+			justify-content: start;
+			justify-content: center;
+		}
+	}
+}
+@media only screen and (min-width: 860px) {
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		grid-column: 1 / 2;
+		grid-row: 1/2;
+		width: 35%;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			width: 100%;
+			box-shadow: 0 0 0.8rem 0rem rgba(0, 0, 0, 0.5);
+			z-index: 10;
+		}
+	}
+	#trip-plan {
+		position: fixed;
+		top: 10vh;
+		left: 0;
+		width: 35%;
+	}
+	#trips {
+		width: 65%;
+		position: absolute;
+		top: 10vh;
+		right: 0;
+		margin: 0 auto;
+		padding: 0 2% 10vh 2%;
+		>#trips-list {
+			align-items: stretch;
+			gap: 4vh 4vh;
+			grid-template-columns: repeat(2, 1fr);
+			justify-content: start;
+			justify-content: center;
+		}
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		justify-content: center;
+		>a {
+			>#footer-to-up {
+				position: fixed;
+				right: 1.5rem;
+				bottom: 1.5rem;
+				>i {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#trips {
+		width: 75%;
+		>#trips-list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	header {
+		width: 25%;
+	}
+	footer {
+		width: 25%;
+	}
+	#trip-plan {
+		width: 25%;
+	}
+}
+
+
